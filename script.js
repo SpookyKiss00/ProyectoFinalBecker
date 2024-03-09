@@ -40,23 +40,22 @@ function comprobarUsuario(){
 
     function comprobarContrasena(){
 
-        usuariosRegistrados[indiceUsuario].contrasena == contrasena ?
-        (() => {
-            let contrasenaExistente = document.getElementById("contrasenaExistente");
-            contrasenaExistente.innerHTML = '<p>La contraseña ' + nombre + ' es la correcta</p>';
+        let contrasena = ingresoContrasena.value //Pedir contraseña
+            if (usuariosRegistrados[indiceUsuario].contrasena == contrasena){
+                let contrasenaExistente = document.getElementById("contrasenaExistente");
+                contrasenaExistente.innerHTML = '<p>La contraseña ' + nombre + ' es la correcta</p>'
+        
+                let botonJugar = document.getElementById("botonJugar");
+                botonJugar.innerHTML = '<button type="button" class="botonComprobar btn btn-success"><a href="html/juego.html">Jugar</a></button>'
 
-            let botonJugar = document.getElementById("botonJugar");
-            botonJugar.innerHTML = '<button type="button" class="botonComprobar btn btn-success"><a href="html/juego.html">Jugar</a></button>';
-
-            botonJugar.addEventListener('click', () => {
-                localStorage.setItem('nombre', nombre);
-            });
-        })()
-        :
-        (() => {
-            let contrasenaExistente = document.getElementById("contrasenaExistente");
-            contrasenaExistente.innerHTML = '<p>La contraseña ' + contrasena + ' es incorrecta</p>';
-        })();
+                botonJugar.addEventListener('click', function(){
+                    localStorage.setItem('nombre', nombre)
+                })
+                }
+            else{
+                let contrasenaExistente = document.getElementById("contrasenaExistente");
+                contrasenaExistente.innerHTML = '<p>La contraseña ' + contrasena + ' es incorrecta</p>'
+                };
 
     }
 }
