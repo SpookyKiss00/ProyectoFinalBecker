@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Ruleta</title>
+</head>
+<body>
+    <!-- Navegador -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">JoyRoulette</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item"> 
+                <a class="nav-link" href="">Registro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Bienvenida -->
+      <div class="bienvenida">
+        <h1>La Ruleta</h1>
+        <h3>Por favor, leer las instrucciones</h3>
+        <ul class="list-group-numbered">
+            <li class="list-group-item">Debes indicar la cantidad de números que tendrá la ruleta</li>
+            <li class="list-group-item">Decidir si apostarás por color o número</li>
+            <li class="list-group-item">Si vas por color, indicar si al rojo, negro o verde. El rojo es para partes, negro para impares, y el verde para el número 0</li>
+            <li class="list-group-item">Si vas por número, debes indicar el número al que quieres apostar</li>
+          </ul>
+          <div id="jugador">
+          </div>
+      </div>
+
+      <!-- Ruleta -->
+      <div class="ruleta input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">c:</span>
+        <input id="cantidadNumeros" type="number" class="inputNumerico form-control" placeholder="Cantidad de N°s" required>
+      </div>
+
+      <div id="tipoApuesta">
+      </div>
+  
+      <div id="contenedorApuestas" class="input-group mb-3">
+      </div>
+
+      <div id="resultadoApuesta">
+      </div>
+
+      <!-- Cartas de los premios -->
+      <div id="premiosCards" class="cartas card-body">
+    
+      </div>
+
+  <!-- Footer -->
+  <footer class="footer-grid">
+    <div><p>Términos y condiciones</p></div>
+    <div><p><a href="contacto.html">Contacto</a></p></div>
+    <div><p>Ubicación: Av. Providencia 1234-0000</p></div>
+    <div><p>Todos los derechos reservados</p></div>
+  </footer> 
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../ruleta.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        
+</body>
+</html>

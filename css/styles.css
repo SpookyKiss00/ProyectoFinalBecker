@@ -1,0 +1,297 @@
+body {
+  background-color: rgb(255, 242, 227);
+}
+
+.bienvenida {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../img/casino.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  padding: 10px 0 10px 0;
+}
+.bienvenida h1 {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  padding: 0px 10px 10px 10px;
+}
+.bienvenida h3 {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  padding: 0px 10px 0px 10px;
+}
+.bienvenida p {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  padding: 0px 10px 0px 10px;
+}
+.bienvenida ul {
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  padding: 0px 10px 0px 10px;
+}
+
+#tipoApuesta {
+  margin: 0 auto;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#contenedorApuestas {
+  margin: 0 auto;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inicioSesion {
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.inicioSesion #botonJugar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.inicioSesion a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 172px) {
+  #tipoApuesta {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #tipoApuesta button {
+    width: 100%;
+  }
+}
+@media (max-width: 172px) {
+  #tipoApuesta {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #tipoApuesta button {
+    width: 100%;
+  }
+}
+@media (min-width: 400px) {
+  #resultadoApuesta {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #contenedorApuestas {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .ruleta {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+  #tipoApuesta {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .inicioSesion {
+    margin: 0 auto;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .inicioSesion .inicioUsuario {
+    width: 400px;
+  }
+  .inicioSesion .inicioContrasena {
+    width: 400px;
+  }
+  .inicioSesion .botonComprobar {
+    width: 400px;
+  }
+  .inicioSesion .botonRegistrar {
+    width: 400px;
+  }
+}
+.carrusel {
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+@media (min-width: 400px) {
+  .carrusel {
+    margin: 0 auto;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-direction: row;
+    width: 400px;
+  }
+}
+.registro {
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (min-width: 400px) {
+  .registro {
+    margin: 0 auto;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .registro .registroUsuario {
+    width: 400px;
+  }
+  .registro .registroContrasena {
+    width: 400px;
+  }
+  .registro .botonComprobar {
+    width: 400px;
+  }
+  .registro .botonRegistro {
+    width: 400px;
+  }
+}
+.footer-grid {
+  background-color: rgb(48, 52, 52);
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 200px;
+}
+.footer-grid a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.footer-grid a:hover {
+  text-decoration: none;
+  color: rgba(133, 133, 133, 0.825);
+  font-weight: bold;
+}
+
+@media (min-width: 400px) {
+  .footer-grid {
+    grid-template-columns: 200px 200px;
+  }
+}
+.cartas {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+.cartas .premiosCards {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  height: 500px;
+}
+.cartas .premiosCards img {
+  max-width: 100%;
+  height: auto;
+}
+.cartas .premiosCards .fichas {
+  margin-top: 10px;
+}
+
+@media (min-width: 700px) {
+  .cartas {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .cartas .premiosCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 500px;
+  }
+  .cartas .premiosCards img {
+    max-width: 100%;
+    height: auto;
+  }
+  .cartas .premiosCards .fichas {
+    margin-top: 10px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
