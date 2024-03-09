@@ -62,6 +62,6 @@ function comprobarUsuario(){
 }
 
 const usuariosRegistrados = [{nombre: "luffy", contrasena: "monkey"}, {nombre: "zoro", contrasena: "roronoa"}, {nombre: "nami", contrasena: "nami"}]
-// alert("3a Preentrega: Estas son las contraseñas con las que funciona el código(usuario // contraseña): 1) luffy // monkey; 2) zoro // roronoa; 3) nami // nami")
+alert("3a Preentrega: Estas son las contraseñas con las que funciona el código(usuario // contraseña): 1) luffy // monkey; 2) zoro // roronoa; 3) nami // nami")
 
 localStorage.setItem('nombre', 'luffy')
