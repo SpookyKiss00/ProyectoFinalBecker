@@ -294,4 +294,9 @@ body {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+.tituloPremios{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
